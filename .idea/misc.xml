@@ -3,11 +3,17 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/a03_SpringBasic" />
+    <file type="web" url="file://$PROJECT_DIR$/a04_IoC" />
+    <file type="web" url="file://$PROJECT_DIR$/a05_BeanCreate" />
+    <file type="web" url="file://$PROJECT_DIR$/a06_BeanLifeCycle" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/a03_SpringBasic/pom.xml" />
+        <option value="$PROJECT_DIR$/a04_IoC/pom.xml" />
+        <option value="$PROJECT_DIR$/a05_BeanCreate/pom.xml" />
+        <option value="$PROJECT_DIR$/a06_BeanLifeCycle/pom.xml" />
       </list>
     </option>
   </component>
