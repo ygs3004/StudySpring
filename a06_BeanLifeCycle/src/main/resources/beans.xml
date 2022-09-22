@@ -4,7 +4,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-						http://www.springframework.org/schema/beans/spring-beans.xsd">
+						http://www.springframework.org/schema/beans/spring-beans.xsd"
+                        default-init-method="default_init"
+                        default-destroy-method="default_destroy"
+                        >
 
     <!--<bean class="kr.co.ezenac.beans.TestBean1" lazy-init="true"/>-->
     <bean class="kr.co.ezenac.beans.TestBean1"/>
@@ -16,4 +19,16 @@
           lazy-init="true" init-method="bean1_init"
           destroy-method="bean1_destroy"/>
 
+    <bean id="t2" class="kr.co.ezenac.beans.TestBean2" lazy-init="true"/>
+
+    <bean id="t3" class="kr.co.ezenac.beans.TestBean3"
+          lazy-init="true"
+          init-method="bean3_init" destroy-method="bean3_destroy"/>
+
+    <!-- default-init-method, default-destroy-method : 설정한 메서드가 존재하지 않으면 무시한다. -->
+    <!--<bean id="t4" class="kr.co.ezenac.beans.TestBean4" lazy-init="true"/>-->
+
+    <!-- init-method, destroy-method : 설정한 메서드가 없으면 오류가 발생한다. -->
+    <bean id="t4" class="kr.co.ezenac.beans.TestBean4" lazy-init="true"
+          init-method="bean4_init" destroy-method="bean4_destroy"/>
 </beans>

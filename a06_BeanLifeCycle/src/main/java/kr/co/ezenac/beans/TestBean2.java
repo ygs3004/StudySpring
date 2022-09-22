@@ -11,7 +11,7 @@ public class TestBean2 {
     }
 
     public void default_destroy() {
-        System.out.println("TestBean1의 Default_destroy 메서드");
+        System.out.println("TestBean2의 Default_destroy 메서드");
     }
 
 }

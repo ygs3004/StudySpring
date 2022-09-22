@@ -6,6 +6,9 @@
     <file type="web" url="file://$PROJECT_DIR$/a04_IoC" />
     <file type="web" url="file://$PROJECT_DIR$/a05_BeanCreate" />
     <file type="web" url="file://$PROJECT_DIR$/a06_BeanLifeCycle" />
+    <file type="web" url="file://$PROJECT_DIR$/a07_BeanPostProcessor" />
+    <file type="web" url="file://$PROJECT_DIR$/a08_ConstructorDI" />
+    <file type="web" url="file://$PROJECT_DIR$/a09_SetterDI" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -14,6 +17,9 @@
         <option value="$PROJECT_DIR$/a04_IoC/pom.xml" />
         <option value="$PROJECT_DIR$/a05_BeanCreate/pom.xml" />
         <option value="$PROJECT_DIR$/a06_BeanLifeCycle/pom.xml" />
+        <option value="$PROJECT_DIR$/a07_BeanPostProcessor/pom.xml" />
+        <option value="$PROJECT_DIR$/a08_ConstructorDI/pom.xml" />
+        <option value="$PROJECT_DIR$/a09_SetterDI/pom.xml" />
       </list>
     </option>
   </component>

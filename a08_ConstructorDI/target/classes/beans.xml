@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 절대 오타 있으면 안됨 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <bean id="obj1" class="kr.co.ezenac.beans.TestBean1" lazy-init="true"/>
+
+        <bean id="obj2" class="kr.co.ezenac.beans.TestBean1" lazy-init="true">
+                <constructor-arg value="100" type="int"/>
+        </bean>
+
+        <bean id="obj3" class="kr.co.ezenac.beans.TestBean1" lazy-init="true">
+                <constructor-arg value="11.11" type="double"/>
+        </bean>
+
+        <bean id="obj4" class="kr.co.ezenac.beans.TestBean1" lazy-init="true">
+                <constructor-arg value="Spring"/>
+        </bean>
+
+        <!-- 타입을 안쓸경우 생성자에 작성된 매개 변수 순서대로 들어감 -->
+        <bean id="obj5" class="kr.co.ezenac.beans.TestBean1" lazy-init="true">
+                <constructor-arg value="200"/>
+                <constructor-arg value="22.22"/>
+                <constructor-arg value="Spring" type="java.lang.String"/>
+        </bean>
+
+        <bean id="obj6" class="kr.co.ezenac.beans.TestBean1" lazy-init="true">
+                <constructor-arg value="22.22" type="double"/>
+                <constructor-arg value="Spring" type="java.lang.String"/>
+                <constructor-arg value="200" type="int"/>
+        </bean>
+
+        <bean id="obj7" class="kr.co.ezenac.beans.TestBean1" lazy-init="true">
+                <constructor-arg value="44.44" type="double" index="1"/>
+                <constructor-arg value="MVC" type="java.lang.String" index="2"/>
+                <constructor-arg value="44" type="int" index="0"/>
+        </bean>
+
+<!--
+        <bean id="d1" class="kr.co.ezenac.beans.DataBean" lazy-init="true"/>
+        <bean id="d2" class="kr.co.ezenac.beans.DataBean" lazy-init="true"/>
+
+        <bean id="obj8" class="kr.co.ezenac.beans.TestBean2" lazy-init="true">
+                <constructor-arg>
+                        <ref bean="d1"/>
+                </constructor-arg>
+                <constructor-arg>
+                        <ref bean="d2"/>
+                </constructor-arg>
+        </bean>
+-->
+
+        <bean id="obj8" class="kr.co.ezenac.beans.TestBean2" lazy-init="true">
+                <constructor-arg>
+                        <bean class="kr.co.ezenac.beans.DataBean"/>
+                </constructor-arg>
+                <constructor-arg>
+                        <bean class="kr.co.ezenac.beans.DataBean"/>
+                </constructor-arg>
+        </bean>
+
+        <bean id="data_bean" class="kr.co.ezenac.beans.DataBean" scope="prototype"/>
+        <bean id="obj9" class="kr.co.ezenac.beans.TestBean2" lazy-init="true">
+                <constructor-arg ref="data_bean"/>
+                <constructor-arg ref="data_bean"/>
+        </bean>
+
+</beans>
