@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 절대 오타 있으면 안됨 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+						http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+            <bean id="obj1" class="kr.co.ezenac.beans.TestBean1">
+                <property name="data1" ref="data_bean1"/>
+                <property name="data2" ref="data_bean1"/>
+            </bean>
+
+            <bean id="data_bean1" class="kr.co.ezenac.beans.DataBean1" scope="prototype"/>
+
+            <bean id="obj2" class="kr.co.ezenac.beans.TestBean1" autowire="byName"/> <!-- TestBean1의 필드명(name)과 같은 id를 가진 객체를 자동 주입 -->
+            <bean id="data1" class="kr.co.ezenac.beans.DataBean1"/>
+            <bean id="data2" class="kr.co.ezenac.beans.DataBean1"/>
+
+            <bean id="obj3" class="kr.co.ezenac.beans.TestBean2" autowire="byType"/> <!-- TestBean1의 필드 타입을 가진 객체를 자동 주입 -->
+            <!--<bean class="kr.co.ezenac.beans.DataBean2"/>-->
+            <!--<bean class="kr.co.ezenac.beans.DataBean2"/> byType일 때 동일타입이 두개 이상일 시 에러-->
+
+            <bean id="obj4" class="kr.co.ezenac.beans.TestBean3">
+                <constructor-arg ref="data_bean2" index="0"/>
+                <constructor-arg ref="data_bean2" index="1"/>
+            </bean>
+
+            <bean id="data_bean2" class="kr.co.ezenac.beans.DataBean2"/>
+</beans>

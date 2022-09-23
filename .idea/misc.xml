@@ -9,6 +9,8 @@
     <file type="web" url="file://$PROJECT_DIR$/a07_BeanPostProcessor" />
     <file type="web" url="file://$PROJECT_DIR$/a08_ConstructorDI" />
     <file type="web" url="file://$PROJECT_DIR$/a09_SetterDI" />
+    <file type="web" url="file://$PROJECT_DIR$/a10_CollectionDI" />
+    <file type="web" url="file://$PROJECT_DIR$/a11_AutoWire" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -20,6 +22,8 @@
         <option value="$PROJECT_DIR$/a07_BeanPostProcessor/pom.xml" />
         <option value="$PROJECT_DIR$/a08_ConstructorDI/pom.xml" />
         <option value="$PROJECT_DIR$/a09_SetterDI/pom.xml" />
+        <option value="$PROJECT_DIR$/a10_CollectionDI/pom.xml" />
+        <option value="$PROJECT_DIR$/a11_AutoWire/pom.xml" />
       </list>
     </option>
   </component>
