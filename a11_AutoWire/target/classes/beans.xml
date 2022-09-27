@@ -25,6 +25,22 @@
                 <constructor-arg ref="data_bean2" index="0"/>
                 <constructor-arg ref="data_bean2" index="1"/>
             </bean>
-
             <bean id="data_bean2" class="kr.co.ezenac.beans.DataBean2"/>
+
+            <bean id="obj5" class="kr.co.ezenac.beans.TestBean3" autowire="constructor"/>
+
+            <bean id="obj6" class="kr.co.ezenac.beans.TestBean3" autowire="constructor">
+                <constructor-arg value="100" index="0" type="int"/>
+                <constructor-arg value="문자열" index="1" type="java.lang.String"/>
+                <constructor-arg ref="data_bean2" index="2" type="kr.co.ezenac.beans.DataBean2"/>
+                <constructor-arg ref="data_bean2" index="3"/>
+            </bean>
+
+            <bean id="obj7" class="kr.co.ezenac.beans.TestBean3" autowire="constructor">
+                <constructor-arg value="200" index="0" type="int"></constructor-arg>
+                <constructor-arg value="문자열1" index="1" ></constructor-arg>
+            </bean>
+
+            <bean id="obj8" class="kr.co.ezenac.beans.TestBean1"/>
+
 </beans>

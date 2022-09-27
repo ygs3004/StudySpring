@@ -11,6 +11,9 @@
     <file type="web" url="file://$PROJECT_DIR$/a09_SetterDI" />
     <file type="web" url="file://$PROJECT_DIR$/a10_CollectionDI" />
     <file type="web" url="file://$PROJECT_DIR$/a11_AutoWire" />
+    <file type="web" url="file://$PROJECT_DIR$/a12_JavaBeanConfiguration" />
+    <file type="web" url="file://$PROJECT_DIR$/a13_initDestroy" />
+    <file type="web" url="file://$PROJECT_DIR$/a14_JavaDI" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -24,6 +27,10 @@
         <option value="$PROJECT_DIR$/a09_SetterDI/pom.xml" />
         <option value="$PROJECT_DIR$/a10_CollectionDI/pom.xml" />
         <option value="$PROJECT_DIR$/a11_AutoWire/pom.xml" />
+        <option value="$PROJECT_DIR$/a12_JavaBeanConfiguration/pom.xml" />
+        <option value="$PROJECT_DIR$/a_13initDestroy/pom.xml" />
+        <option value="$PROJECT_DIR$/a13_initDestroy/pom.xml" />
+        <option value="$PROJECT_DIR$/a14_JavaDI/pom.xml" />
       </list>
     </option>
   </component>

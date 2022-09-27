@@ -6,6 +6,10 @@ public class TestBean3 {
     private DataBean2 data3;
     private DataBean2 data4;
 
+/*    public TestBean3() {
+        System.out.println("TestBean3의 생성자");
+    }*/
+
     public TestBean3(DataBean2 data3, DataBean2 data4) {
         this.data3 = data3;
         this.data4 = data4;
