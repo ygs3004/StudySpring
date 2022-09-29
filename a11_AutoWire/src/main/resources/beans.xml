@@ -21,22 +21,22 @@
             <!--<bean class="kr.co.ezenac.beans.DataBean2"/>-->
             <!--<bean class="kr.co.ezenac.beans.DataBean2"/> byType일 때 동일타입이 두개 이상일 시 에러-->
 
-            <bean id="obj4" class="kr.co.ezenac.beans.TestBean3">
+            <bean id="obj4" class="kr.co.ezenac.beans2.TestBean3">
                 <constructor-arg ref="data_bean2" index="0"/>
                 <constructor-arg ref="data_bean2" index="1"/>
             </bean>
             <bean id="data_bean2" class="kr.co.ezenac.beans.DataBean2"/>
 
-            <bean id="obj5" class="kr.co.ezenac.beans.TestBean3" autowire="constructor"/>
+            <bean id="obj5" class="kr.co.ezenac.beans2.TestBean3" autowire="constructor"/>
 
-            <bean id="obj6" class="kr.co.ezenac.beans.TestBean3" autowire="constructor">
+            <bean id="obj6" class="kr.co.ezenac.beans2.TestBean3" autowire="constructor">
                 <constructor-arg value="100" index="0" type="int"/>
                 <constructor-arg value="문자열" index="1" type="java.lang.String"/>
                 <constructor-arg ref="data_bean2" index="2" type="kr.co.ezenac.beans.DataBean2"/>
                 <constructor-arg ref="data_bean2" index="3"/>
             </bean>
 
-            <bean id="obj7" class="kr.co.ezenac.beans.TestBean3" autowire="constructor">
+            <bean id="obj7" class="kr.co.ezenac.beans2.TestBean3" autowire="constructor">
                 <constructor-arg value="200" index="0" type="int"></constructor-arg>
                 <constructor-arg value="문자열1" index="1" ></constructor-arg>
             </bean>

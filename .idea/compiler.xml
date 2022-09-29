@@ -6,18 +6,22 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="a16_JSR250" />
+        <module name="a06_BeanLifeCycle" />
+        <module name="a18_ComponentSetting" />
+        <module name="a07_BeanPostProcessor" />
+        <module name="a10_CollectionDI" />
+        <module name="a14_JavaDI" />
+        <module name="a04_IoC" />
+        <module name="a17_Component" />
         <module name="a13_initDestroy" />
+        <module name="a15_AnnotationBean" />
         <module name="a09_SetterDI" />
         <module name="a11_AutoWire" />
         <module name="a08_ConstructorDI" />
-        <module name="a06_BeanLifeCycle" />
         <module name="a03_SpringBasic" />
-        <module name="a07_BeanPostProcessor" />
-        <module name="a10_CollectionDI" />
         <module name="a12_JavaBeanConfiguration" />
         <module name="a05_BeanCreate" />
-        <module name="a14_JavaDI" />
-        <module name="a04_IoC" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8" />

@@ -8,7 +8,7 @@
 
         <bean id="xml1" class="kr.co.ezenac.beans.TestBean1"/>
         <bean id="xml2" class="kr.co.ezenac.beans.TestBean2" lazy-init="true"/>
-        <bean id="xml3" class="kr.co.ezenac.beans.TestBean3" scope="prototype"/>
+        <bean id="xml3" class="kr.co.ezenac.beans2.TestBean3" scope="prototype"/>
 
         <bean class="kr.co.ezenac.beans.TestBean4"/>
         <bean class="kr.co.ezenac.beans.TestBean4" primary="true"/>

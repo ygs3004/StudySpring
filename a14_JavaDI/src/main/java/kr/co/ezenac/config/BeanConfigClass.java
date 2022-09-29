@@ -1,7 +1,8 @@
 package kr.co.ezenac.config;
 
-import kr.co.ezenac.beans.DataBean1;
-import kr.co.ezenac.beans.TestBean1;
+import kr.co.ezenac.beans.*;
+import org.springframework.beans.factory.annotation.Autowire;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,6 +21,30 @@ public class BeanConfigClass {
         t2.setData2("문자열");
         t2.setData3(new DataBean1());
         return t2;
+    }
+
+    @Bean
+    public DataBean2 data1() {
+        return new DataBean2();
+    }
+    @Bean
+    public DataBean2 data2() {
+        return new DataBean2();
+    }
+
+    @Bean(autowire = Autowire.BY_NAME)
+    public TestBean2 java3(){
+        return new TestBean2();
+    }
+
+    @Bean
+    public DataBean3 data3(){
+        return new DataBean3();
+    }
+
+    @Bean(autowire = Autowire.BY_TYPE)
+    public TestBean3 java4(){
+        return new TestBean3();
     }
 
 }

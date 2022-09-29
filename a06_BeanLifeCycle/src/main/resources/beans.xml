@@ -21,7 +21,7 @@
 
     <bean id="t2" class="kr.co.ezenac.beans.TestBean2" lazy-init="true"/>
 
-    <bean id="t3" class="kr.co.ezenac.beans.TestBean3"
+    <bean id="t3" class="kr.co.ezenac.beans2.TestBean3"
           lazy-init="true"
           init-method="bean3_init" destroy-method="bean3_destroy"/>
 

@@ -21,8 +21,13 @@
 
     <bean id="data_bean1" class="kr.co.ezenac.beans.DataBean1"/>
 
-    <bean id="xml3" class="kr.co.ezenac.beans.TestBean2" autowire="byName"/>
     <bean id="data1" class="kr.co.ezenac.beans.DataBean2"/>
     <bean id="data2" class="kr.co.ezenac.beans.DataBean2"/>
+    <bean id="xml3" class="kr.co.ezenac.beans.TestBean2" lazy-init="true" autowire="byName"/>
+
+    <bean class="kr.co.ezenac.beans2.TestBean3"/>
+
+    <bean class="kr.co.ezenac.beans.DataBean3"/>
+    <bean id="xml4" class="kr.co.ezenac.beans2.TestBean3" autowire="byType"/>
 
 </beans>
