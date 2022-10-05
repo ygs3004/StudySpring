@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/a" />
     <file type="web" url="file://$PROJECT_DIR$/a03_SpringBasic" />
     <file type="web" url="file://$PROJECT_DIR$/a04_IoC" />
     <file type="web" url="file://$PROJECT_DIR$/a05_BeanCreate" />
@@ -18,6 +19,11 @@
     <file type="web" url="file://$PROJECT_DIR$/a16_JSR250" />
     <file type="web" url="file://$PROJECT_DIR$/a17_Component" />
     <file type="web" url="file://$PROJECT_DIR$/a18_ComponentSetting" />
+    <file type="web" url="file://$PROJECT_DIR$/a19_ComponentAutowired" />
+    <file type="web" url="file://$PROJECT_DIR$/a20_AOPXML" />
+    <file type="web" url="file://$PROJECT_DIR$/a21_ExecutionDirective" />
+    <file type="web" url="file://$PROJECT_DIR$/a22_AOPjava" />
+    <file type="web" url="file://$PROJECT_DIR$/a23_SpringJDBC" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -39,10 +45,17 @@
         <option value="$PROJECT_DIR$/a16_JSR250/pom.xml" />
         <option value="$PROJECT_DIR$/a17_Component/pom.xml" />
         <option value="$PROJECT_DIR$/a18_ComponentSetting/pom.xml" />
+        <option value="$PROJECT_DIR$/a19_ComponentAutowired/pom.xml" />
+        <option value="$PROJECT_DIR$/a/pom.xml" />
+        <option value="$PROJECT_DIR$/a20_AOPXML/pom.xml" />
+        <option value="$PROJECT_DIR$/a21_ExecutionDirective/pom.xml" />
+        <option value="$PROJECT_DIR$/a22_AOPjava/pom.xml" />
+        <option value="$PROJECT_DIR$/a23_SpringJDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/a24_MyBatis/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

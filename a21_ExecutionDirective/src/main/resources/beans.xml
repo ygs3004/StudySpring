@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 절대 오타 있으면 안됨 -->
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context
+                           https://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/aop
+                           https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+        <bean id="xml1" class="kr.co.ezenac.beans.TestBean1"/>
+        <bean id="xml2" class="kr.co.ezenac.beans.TestBean2"/>
+        <bean id="xml3" class="kr.co.ezenac.beans2.TestBean1"/>
+
+        <bean id="advisor1" class="kr.co.ezenac.advisor.AdvisorClass"/>
+
+        <aop:config>
+                <aop:aspect ref="advisor1">
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.method1())"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.method1(int))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.method1(String))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.method1(int, int))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.method1(int, String))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.method1(*))"/> 매개변수 하나를 의미-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.method1(*, *))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.TestBean1.* (..))"/> 모든 메서드, 모든 매개 변수-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.*.method1(..))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.*.method1(..))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.beans.*.* (..))"/> 모든 클래스, 모든 메서드, 모든 변수-->
+                        <!--<aop:pointcut id="point1" expression="execution(void kr.co.ezenac.*.*.* (..))"/> ezenac의 패키지, 클래스, 모든 메서드, 모든 변수-->
+                        <!--<aop:pointcut id="point1" expression="execution(void *.* (..))"/> 모든 패키지, 모든 클래스, 모든 void 메서드-->
+                        <!--<aop:pointcut id="point1" expression="execution(int *.* (..))"/> 모든 패키지, 모든 클래스, 모든 int 메서드-->
+                        <!-- 모든 패키지, 모든 클래스, 모든 메서드 -->
+                        <!--<aop:pointcut id="point1" expression="execution(* *.*(..))"/>-->
+                        <!--<aop:pointcut id="point1" expression="execution(* *(..))"/>-->
+                        <aop:pointcut id="point1" expression="execution(* method1(..))"/>
+
+                        <aop:before method="beforeMethod" pointcut-ref="point1"/>
+                </aop:aspect>
+        </aop:config>
+
+</beans>
